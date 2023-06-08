@@ -1,0 +1,130 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+body{
+  font-family:sans-serif;
+  font-weight: normal;
+  line-height: 1.5;
+  text-align: left;
+}
+h1{
+  margin: 1rem 0 0 1.5rem;
+  font-weight: 100;
+}
+p,li{
+  margin-top: 1rem;
+  margin-bottom:1rem ;
+  margin-left: 2.5rem;
+}
+p,
+li,
+h5{
+color:#4d4e53;
+}
+.toptop{
+  margin-top: 1.5rem;
+}
+li{
+  margin-left: 5rem;
+}
+h5{
+  font-size: 0.8rem;
+  font-weight: normal;
+  margin: 0.3rem;
+}
+li ul li:first-child{
+  margin-top: 1rem;
+}
+.part-1{
+  width: 75%;
+  margin-left: 21vw;
+}
+.explain{
+  width: 95%;
+  float: right;
+  background-color: #f7f7f7;
+  margin-bottom: 0.7rem;
+}
+.small{
+  margin: 1rem 0 1rem 0.5rem;
+}
+/*------part-2-------------*/
+.main-part-2{
+  width: 21%;
+  position: fixed;
+  left: 0;
+  top:0;
+  box-shadow:3px 0px gray;
+}
+#main-word{
+  margin: 1rem;
+  font-size: 1.3rem;
+}
+.word{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: normal;
+}
+.word h1{
+  font-weight: normal;
+}
+.part-2{
+  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 90vh;
+  overflow:scroll;
+}
+[class^=part-2-]{
+  border-top: 1px solid black;
+  cursor: pointer;
+}
+[class^=part-2-] p{
+  font-size: 0.9rem;
+  margin: 0.8rem 0rem 0.8rem 2rem;
+}
+[class^=part-2-] a{
+  color:black;
+  text-decoration: none;
+}
+/*-----media---------*/
+@media(max-width:950px){
+  html{
+    font-size: 13px;
+  }
+  .part-1{
+    width: 65%;
+    margin-left: 31%;
+  }
+  #main-word{
+    margin: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .main-part-2{
+    width: 30%;
+  }
+}
+@media(max-width:600px){
+  .toptop{
+    margin-top: 50vh;
+  }
+  .part-1{
+    width: 93%;
+    margin: auto;
+  }
+  /*----part-2----*/
+  .main-part-2{
+    position: absolute;
+    top:0;
+    width:100%;
+  }
+  .part-2{
+    height: 40vh;
+    border: 1px solid black;
+  }
+}
